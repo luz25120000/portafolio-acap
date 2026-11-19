@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio de Experiencias ACAP | Zoe Leyes</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: '#1a365d',
+                        midblue: '#2b6cb0',
+                        tealaccent: '#319795',
+                        lightbg: '#f7fafc'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.92);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(226, 232, 240, 0.8);
+        }
+        .header-gradient {
+            background: linear-gradient(135deg, #1a365d 0%, #2b6cb0 65%, #319795 100%);
+        }
+        .card-hover {
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 24px -8px rgba(26, 54, 93, 0.12);
+        }
+    </style>
+</head>
+<body class="bg-lightbg text-slate-800 font-sans antialiased flex flex-col min-h-screen">
+
+    <!-- NAVEGACIÓN RÁPIDA FIJA -->
+    <nav class="fixed top-0 left-0 right-0 z-50 px-4 py-3">
+        <div class="max-w-4xl mx-auto">
+            <div class="glass-nav rounded-full px-5 py-2.5 flex items-center justify-between shadow-md shadow-slate-200/60">
+                <a href="#inicio" class="flex items-center gap-2.5 group">
+                    <div class="w-9 h-9 rounded-full bg-gradient-to-tr from-navy via-midblue to-tealaccent flex items-center justify-center text-white font-bold text-xs shadow-sm group-hover:scale-105 transition-transform">
+                        ZL
+                    </div>
+                    <span class="font-bold text-navy tracking-tight text-sm hidden sm:inline">Zoe Leyes</span>
+                </a>
+
+                <div class="flex items-center gap-3 sm:gap-6 text-xs font-semibold text-slate-600">
+                    <a href="#presentacion" class="hover:text-midblue transition-colors py-1">Presentación</a>
+                    <a href="#experiencias" class="hover:text-midblue transition-colors py-1">Experiencias</a>
+                    <a href="#reflexion" class="hover:text-midblue transition-colors py-1">Reflexión</a>
+                    <a href="#contacto" class="px-3.5 py-1.5 rounded-full bg-navy text-white hover:bg-midblue transition-colors shadow-sm">Contacto</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ENCABEZADO / PORTADA -->
+    <header id="inicio" class="pt-28 pb-16 px-4">
+        <div class="max-w-4xl mx-auto header-gradient rounded-3xl p-8 sm:p-14 text-center text-white shadow-xl relative overflow-hidden">
+            <!-- Elementos decorativos sutiles -->
+            <div class="absolute -top-16 -right-16 w-64 h-64 bg-white/10 rounded-full blur-2xl pointer-events-none"></div>
+            <div class="absolute -bottom-20 -left-16 w-64 h-64 bg-tealaccent/30 rounded-full blur-2xl pointer-events-none"></div>
+
+            <div class="relative z-10">
+                <span class="inline-block px-4 py-1.5 rounded-full bg-white/15 backdrop-blur-sm border border-white/20 text-xs font-semibold uppercase tracking-widest mb-5">
+                    Nivel Secundario &bull; Formación Personal y Académica
+                </span>
+                
+                <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight leading-tight mb-4">
+                    PORTFOLIO DE EXPERIENCIAS ACAP
+                </h1>
+                
+                <p class="text-lg sm:text-xl font-serif italic text-blue-100 mb-6">
+                    Recorrido, aprendizajes y reflexión personal
+                </p>
+
+                <div class="inline-flex flex-wrap items-center justify-center gap-2 sm:gap-4 px-5 py-2.5 rounded-2xl bg-navy/40 border border-white/15 text-sm font-medium">
+                    <span><i class="fa-solid fa-user-graduate mr-1.5 text-teal-300"></i><strong>Estudiante:</strong> Zoe Leyes</span>
+                    <span class="text-white/40 hidden sm:inline">|</span>
+                    <span>Nivel Secundario</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="max-w-4xl mx-auto px-4 space-y-10 pb-20 flex-1 w-full">
+
+        <!-- 1. PRESENTACIÓN PERSONAL -->
+        <section id="presentacion" class="bg-white rounded-3xl p-7 sm:p-10 shadow-sm border border-slate-200/80 scroll-mt-24">
+            <div class="flex items-center gap-3 mb-5 pb-3 border-b-2 border-tealaccent">
+                <div class="w-10 h-10 rounded-xl bg-navy/10 text-navy flex items-center justify-center text-lg">
+                    <i class="fa-solid fa-id-card"></i>
+                </div>
+                <h2 class="text-2xl font-bold text-navy">1. Presentación Personal</h2>
+            </div>
+
+            <div class="space-y-4 text-slate-700 leading-relaxed text-base">
+                <p>
+                    Mi nombre es <strong class="text-navy font-semibold">Zoe Leyes</strong> y soy estudiante del último año del nivel secundario. A lo largo de mi trayectoria escolar fui desarrollando habilidades como la responsabilidad, la comunicación, el trabajo en equipo y la capacidad de aprender de nuevas experiencias.
+                </p>
+                <p>
+                    Las actividades realizadas fuera del aula me permitieron conocer distintas instituciones, acercarme a nuevos temas y reflexionar sobre mis intereses y mis proyectos para el futuro. Considero que cada experiencia aporta algo diferente a mi formación, tanto en lo académico como en lo personal.
+                </p>
+            </div>
+        </section>
+
+        <!-- 2. EXPERIENCIAS Y APRENDIZAJES -->
+        <section id="experiencias" class="bg-white rounded-3xl p-7 sm:p-10 shadow-sm border border-slate-200/80 scroll-mt-24">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6 pb-3 border-b-2 border-tealaccent">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-xl bg-midblue/10 text-midblue flex items-center justify-center text-lg">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold text-navy">2. Experiencias y Aprendizajes</h2>
+                </div>
+                <span class="text-xs font-semibold text-slate-500 bg-slate-100 px-3 py-1.5 rounded-full self-start sm:self-auto">
+                    5 experiencias registradas
+                </span>
+            </div>
+
+            <div class="space-y-6">
+
+                <!-- Tarjeta 1: Banco Ciudad -->
+                <article class="bg-lightbg rounded-2xl p-6 border border-slate-200/80 border-l-4 border-l-tealaccent card-hover">
+                    <div class="flex flex-wrap items-start justify-between gap-2 mb-3">
+                        <h3 class="text-xl font-bold text-midblue flex items-center gap-2.5">
+                            <i class="fa-solid fa-building-columns text-tealaccent"></i>
+                            Prácticas en el Banco Ciudad (San Martín)
+                        </h3>
+                        <span class="text-xs font-semibold px-3 py-1 rounded-full bg-teal-50 text-tealaccent border border-teal-200">
+                            Práctica Laboral
+                        </span>
+                    </div>
+                    <div class="space-y-3 text-sm sm:text-base text-slate-700">
+                        <p>
+                            <strong class="text-navy">Actividades realizadas:</strong> Realicé una semana de prácticas en el Banco Ciudad de San Martín, participando en la dinámica cotidiana de la entidad y en la atención al público.
+                        </p>
+                        <p>
+                            <strong class="text-navy">Qué aprendí:</strong> Aprendí muchas cosas importantes, entre ellas a tener paciencia, a saber organizarme y a prestar mucha atención en cada tarea. También comprendí la importancia de saber cómo dirigirse y atender adecuadamente a la gente.
+                        </p>
+                        <div class="pt-2">
+                            <span class="text-xs font-bold uppercase tracking-wider text-slate-500 block mb-2">Habilidades en práctica:</span>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 rounded-full bg-white text-navy text-xs font-semibold border border-slate-200 shadow-2xs">Paciencia</span>
+                                <span class="px-3 py-1 rounded-full bg-white text-navy text-xs font-semibold border border-slate-200 shadow-2xs">Organización</span>
+                                <span class="px-3 py-1 rounded-full bg-white text-navy text-xs font-semibold border border-slate-200 shadow-2xs">Atención al detalle</span>
+                                <span class="px-3 py-1 rounded-full bg-white text-navy text-xs font-semibold border border-slate-200 shadow-2xs">Atención al cliente</span>
+                                <span class="px-3 py-1 rounded-full bg-white text-navy text-xs font-semibold border border-slate-200 shadow-2xs">Comunicación</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Tarjeta 2: UCA -->
+                <article class="bg-lightbg rounded-2xl p-6 border border-slate-200/80 border-l-4 border-l-midblue card-hover">
+                    <div class="flex flex-wrap items-start justify-between gap-2 mb-3">
+                        <h3 class="text-xl font-bold text-midblue flex items-center gap-2.5">
+                            <i class="fa-solid fa-university text-navy"></i>
+                            UCA (Universidad Católica Argentina)
+                        </h3>
+                        <span class="text-xs font-semibold px-3 py-1 rounded-full bg-blue-50 text-midblue border border-blue-200">
+                            Ámbito Universitario
+                        </span>
+                    </div>
+                    <div class="space-y-3 text-sm sm:text-base text-slate-700">
+                        <p>
+                            <strong class="text-navy">Actividades realizadas:</strong> Participé de una actividad en un ámbito universitario, con una charla o presentación vinculada con el uso de la inteligencia artificial y el aprendizaje.
+                        </p>
+                        <p>
+                            <strong class="text-navy">Qué aprendí:</strong> Aprendí la importancia de usar la inteligencia artificial de manera responsable, reconociendo sus beneficios y también sus límites. Además, pude conocer un poco más sobre las propuestas y dinámicas de una institución de educación superior.
+                        </p>
+                        <div class="pt-2">
+                            <span class="text-xs font-bold uppercase tracking-wider text-slate-500 block mb-2">Habilidades en práctica:</span>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 rounded-full bg-white text-navy text-xs font-semibold border border-slate-200 shadow-2xs">Pensamiento crítico</span>
+                                <span class="px-3 py-1 rounded-full bg-white text-navy text-xs font-semibold border border-slate-200 shadow-2xs">Curiosidad</span>
+                                <span class="px-3 py-1 rounded-full bg-white text-navy text-xs font-semibold border border-slate-200 shadow-2xs">Autonomía</span>
+                                <span class="px-3 py-1 rounded-full bg-white text-navy text-xs font-semibold border border-slate-200 shadow-2xs">Uso responsable de herramientas digitales</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Tarjeta 3: Talleres y encuentros educativos -->
+                <article class="bg-lightbg rounded-2xl p-6 border border-slate-200/80 border-l-4 border-l-tealaccent card-hover">
+                    <div class="flex flex-wrap items-start justify-between gap-2 mb-3">
+                        <h3 class="text-xl font-bold text-midblue flex items-center gap-2.5">
+                            <i class="fa-solid fa-book-open-reader text-tealaccent"></i>
+                            Talleres y encuentros educativos
+                        </h3>
+                        <span class="text-xs font-semibold px-3 py-1 rounded-full bg-teal-50 text-tealaccent border border-teal-200">
+                            Estrategias de Estudio
+                        </span>
+                    </div>
+                    <div class="space-y-3 text-sm sm:text-base text-slate-700">
+                        <p>
+                            <strong class="text-navy">Actividades realizadas:</strong> Participé en encuentros y presentaciones grupales sobre herramientas de estudio, estrategias de aprendizaje y orientación para el futuro académico y laboral.
+                        </p>
+                        <p>
+                            <strong class="text-navy">Qué aprendí:</strong> Conocí distintas formas de organizar el estudio, como la lectura activa, el subrayado estratégico, la toma de apuntes, los resúmenes y los mapas conceptuales. Estas herramientas pueden ayudarme a estudiar de manera más ordenada.
+                        </p>
+                        <div class="pt-2">
+                            <span class="text-xs font-bold uppercase tracking-wider text-slate-500 block mb-2">Habilidades en práctica:</span>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 rounded-full bg-white text-navy text-xs font-semibold border border-slate-200 shadow-2xs">Organización</span>
+                                <span class="px-3 py-1 rounded-full bg-white text-navy text-xs font-semibold border border-slate-200 shadow-2xs">Autonomía</span>
+                                <span class="px-3 py-1 rounded-full bg-white text-navy text-xs font-semibold border border-slate-200 shadow-2xs">Escucha activa</span>
+                                <span class="px-3 py-1 rounded-full bg-white text-navy text-xs font-semibold border border-slate-200 shadow-2xs">Planificación</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Tarjeta 4: Orientación laboral y desarrollo de proyectos -->
+                <article class="bg-lightbg rounded-2xl p-6 border border-slate-200/80 border-l-4 border-l-midblue card-hover">
+                    <div class="flex flex-wrap items-start justify-between gap-2 mb-3">
+                        <h3 class="text-xl font-bold text-midblue flex items-center gap-2.5">
+                            <i class="fa-solid fa-compass text-navy"></i>
+                            Actividades de orientación laboral y desarrollo de proyectos
+                        </h3>
+                        <span class="text-xs font-semibold px-3 py-1 rounded-full bg-blue-50 text-midblue border border-blue-200">
+                            Orientación Vocacional
+                        </span>
+                    </div>
+                    <div class="space-y-3 text-sm sm:text-base text-slate-700">
+                        <p>
+                            <strong class="text-navy">Actividades realizadas:</strong> Asistí a una actividad con temática de orientación profesional y me acerqué a propuestas relacionadas con el mundo del trabajo y las carreras.
+                        </p>
+                        <p>
+                            <strong class="text-navy">Qué aprendí:</strong> Aprendí la importancia de conocer diferentes opciones para el futuro, reconocer mis intereses y pensar qué habilidades puedo seguir desarrollando para alcanzar mis objetivos.
+                        </p>
+                        <div class="pt-2">
+                            <span class="text-xs font-bold uppercase tracking-wider text-slate-500 block mb-2">Habilidades en práctica:</span>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 rounded-full bg-white text-navy text-xs font-semibold border border-slate-200 shadow-2xs">Adaptabilidad</span>
+                                <span class="px-3 py-1 rounded-full bg-white text-navy text-xs font-semibold border border-slate-200 shadow-2xs">Comunicación</span>
+                                <span class="px-3 py-1 rounded-full bg-white text-navy text-xs font-semibold border border-slate-200 shadow-2xs">Iniciativa</span>
+                                <span class="px-3 py-1 rounded-full bg-white text-navy text-xs font-semibold border border-slate-200 shadow-2xs">Reflexión sobre el futuro</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Tarjeta 5: Misión escolar en Victoria, Entre Ríos -->
+                <article class="bg-lightbg rounded-2xl p-6 border border-slate-200/80 border-l-4 border-l-tealaccent card-hover">
+                    <div class="flex flex-wrap items-start justify-between gap-2 mb-3">
+                        <h3 class="text-xl font-bold text-midblue flex items-center gap-2.5">
+                            <i class="fa-solid fa-hand-holding-heart text-tealaccent"></i>
+                            Misión escolar en Victoria, Entre Ríos
+                        </h3>
+                        <span class="text-xs font-semibold px-3 py-1 rounded-full bg-teal-50 text-tealaccent border border-teal-200">
+                            Experiencia Solidaria
+                        </span>
+                    </div>
+                    <div class="space-y-3 text-sm sm:text-base text-slate-700">
+                        <p>
+                            <strong class="text-navy">Actividades realizadas:</strong> Participé de una experiencia de misión organizada por el colegio. Durante el viaje visitamos hogares de adultos mayores y colegios, compartiendo tiempo con otras personas y conociendo diferentes realidades.
+                        </p>
+                        <p>
+                            <strong class="text-navy">Qué aprendí:</strong> Esta experiencia me permitió valorar la importancia de acompañar, escuchar y tratar a los demás con respeto. También aprendí que dedicar tiempo a otras personas y compartir momentos puede ser significativo, y que la solidaridad se demuestra a través de acciones concretas.
+                        </p>
+                        <div class="pt-2">
+                            <span class="text-xs font-bold uppercase tracking-wider text-slate-500 block mb-2">Habilidades en práctica:</span>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 rounded-full bg-white text-navy text-xs font-semibold border border-slate-200 shadow-2xs">Empatía</span>
+                                <span class="px-3 py-1 rounded-full bg-white text-navy text-xs font-semibold border border-slate-200 shadow-2xs">Solidaridad</span>
+                                <span class="px-3 py-1 rounded-full bg-white text-navy text-xs font-semibold border border-slate-200 shadow-2xs">Comunicación</span>
+                                <span class="px-3 py-1 rounded-full bg-white text-navy text-xs font-semibold border border-slate-200 shadow-2xs">Respeto</span>
+                                <span class="px-3 py-1 rounded-full bg-white text-navy text-xs font-semibold border border-slate-200 shadow-2xs">Responsabilidad</span>
+                                <span class="px-3 py-1 rounded-full bg-white text-navy text-xs font-semibold border border-slate-200 shadow-2xs">Trabajo en equipo</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- 3. REFLEXIÓN PERSONAL SOBRE EL RECORRIDO -->
+        <section id="reflexion" class="bg-white rounded-3xl p-7 sm:p-10 shadow-sm border border-slate-200/80 scroll-mt-24 relative overflow-hidden">
+            <div class="flex items-center gap-3 mb-5 pb-3 border-b-2 border-tealaccent">
+                <div class="w-10 h-10 rounded-xl bg-navy/10 text-navy flex items-center justify-center text-lg">
+                    <i class="fa-solid fa-lightbulb"></i>
+                </div>
+                <h2 class="text-2xl font-bold text-navy">3. Reflexión Personal sobre el Recorrido</h2>
+            </div>
+
+            <div class="space-y-4 text-slate-700 leading-relaxed text-base">
+                <p>
+                    Las experiencias que viví durante las ACAP me permitieron aprender fuera del aula y conocer ámbitos diferentes. Me llevé conocimientos sobre el trabajo real, el estudio, la tecnología y las posibilidades para continuar formándome.
+                </p>
+                <p>
+                    La práctica en el <strong class="text-navy font-semibold">Banco Ciudad</strong> y la <strong class="text-navy font-semibold">misión en Victoria</strong> fueron experiencias muy importantes porque me ayudaron a desarrollar paciencia, a vincularme mejor con las personas y a prestar atención a las necesidades de los demás.
+                </p>
+                <p>
+                    Creo que todas estas actividades aportaron a mi crecimiento personal y me ayudaron a entender que aprender no significa solamente estudiar contenidos, sino también escuchar, participar y estar abierta a nuevas experiencias.
+                </p>
+                <div class="p-4 rounded-2xl bg-blue-50/70 border border-blue-100 text-navy font-medium mt-4">
+                    <i class="fa-solid fa-arrow-trend-up text-tealaccent mr-2"></i>
+                    De cara al futuro, quiero seguir conociendo opciones para elegir un camino que se relacione con mis intereses y objetivos.
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. INFORMACIÓN DE CONTACTO -->
+        <section id="contacto" class="bg-white rounded-3xl p-7 sm:p-10 shadow-sm border border-slate-200/80 scroll-mt-24">
+            <div class="flex items-center gap-3 mb-4 pb-3 border-b-2 border-tealaccent">
+                <div class="w-10 h-10 rounded-xl bg-tealaccent/15 text-tealaccent flex items-center justify-center text-lg">
+                    <i class="fa-solid fa-address-book"></i>
+                </div>
+                <h2 class="text-2xl font-bold text-navy">4. Información de Contacto</h2>
+            </div>
+
+            <p class="text-slate-600 mb-6 text-sm sm:text-base">
+                Si deseas comunicarte conmigo por consultas o propuestas académicas y laborales, puedes hacerlo a través de los siguientes medios:
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <!-- Tarjeta Email -->
+                <div class="bg-lightbg rounded-2xl p-5 border border-slate-200 flex flex-col justify-between gap-4 hover:border-midblue/50 transition-colors">
+                    <div class="flex items-start gap-3.5">
+                        <div class="w-11 h-11 rounded-xl bg-midblue text-white flex items-center justify-center text-lg shrink-0 shadow-xs">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="min-w-0 flex-1">
+                            <span class="text-xs font-bold uppercase tracking-wider text-slate-400 block">Correo Electrónico</span>
+                            <a href="mailto:Zoegeraldine.leyes@gmail.com" class="text-navy font-bold text-sm sm:text-base hover:text-midblue transition-colors break-all">
+                                Zoegeraldine.leyes@gmail.com
+                            </a>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-2 pt-2 border-t border-slate-200/70">
+                        <a href="mailto:Zoegeraldine.leyes@gmail.com" class="flex-1 text-center py-2 px-3 rounded-xl bg-midblue hover:bg-navy text-white text-xs font-semibold transition-colors">
+                            <i class="fa-solid fa-paper-plane mr-1.5"></i> Enviar correo
+                        </a>
+                        <button type="button" onclick="copiarTexto('Zoegeraldine.leyes@gmail.com', 'Correo electrónico')" class="py-2 px-3 rounded-xl bg-white hover:bg-slate-100 text-slate-700 border border-slate-200 text-xs font-semibold transition-colors cursor-pointer" title="Copiar correo">
+                            <i class="fa-regular fa-copy"></i> Copiar
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Tarjeta Teléfono / WhatsApp -->
+                <div class="bg-lightbg rounded-2xl p-5 border border-slate-200 flex flex-col justify-between gap-4 hover:border-tealaccent/50 transition-colors">
+                    <div class="flex items-start gap-3.5">
+                        <div class="w-11 h-11 rounded-xl bg-tealaccent text-white flex items-center justify-center text-lg shrink-0 shadow-xs">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </div>
+                        <div class="min-w-0 flex-1">
+                            <span class="text-xs font-bold uppercase tracking-wider text-slate-400 block">Teléfono / WhatsApp</span>
+                            <a href="tel:+5491154136067" class="text-navy font-bold text-base sm:text-lg hover:text-tealaccent transition-colors">
+                                11 5413-6067
+                            </a>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-2 pt-2 border-t border-slate-200/70">
+                        <a href="https://wa.me/5491154136067" target="_blank" rel="noopener noreferrer" class="flex-1 text-center py-2 px-3 rounded-xl bg-tealaccent hover:bg-teal-700 text-white text-xs font-semibold transition-colors">
+                            <i class="fa-brands fa-whatsapp mr-1.5"></i> WhatsApp
+                        </a>
+                        <a href="tel:+5491154136067" class="py-2 px-3 rounded-xl bg-white hover:bg-slate-100 text-slate-700 border border-slate-200 text-xs font-semibold transition-colors" title="Llamar">
+                            <i class="fa-solid fa-phone"></i>
+                        </a>
+                        <button type="button" onclick="copiarTexto('11 5413-6067', 'Teléfono')" class="py-2 px-3 rounded-xl bg-white hover:bg-slate-100 text-slate-700 border border-slate-200 text-xs font-semibold transition-colors cursor-pointer" title="Copiar número">
+                            <i class="fa-regular fa-copy"></i> Copiar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- NOTIFICACIÓN FLOTANTE (TOAST) PARA COPIADO -->
+    <div id="toast" class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none">
+        <div class="bg-navy text-white px-5 py-3 rounded-2xl shadow-xl flex items-center gap-3 text-sm font-medium border border-white/10">
+            <i class="fa-solid fa-circle-check text-teal-300 text-base"></i>
+            <span id="toast-message">Copiado al portapapeles</span>
+        </div>
+    </div>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="bg-navy text-white py-8 px-4 mt-auto">
+        <div class="max-w-4xl mx-auto text-center">
+            <p class="text-sm font-semibold tracking-wide text-blue-100">
+                Portfolio Personal de Experiencias ACAP - Zoe Leyes
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        let toastTimeout;
+
+        // Función compatible con iframes para copiar al portapapeles sin usar alert()
+        function copiarTexto(texto, etiqueta) {
+            try {
+                const tempInput = document.createElement('textarea');
+                tempInput.value = texto;
+                tempInput.style.position = 'fixed';
+                tempInput.style.opacity = '0';
+                document.body.appendChild(tempInput);
+                tempInput.select();
+                document.execCommand('copy');
+                document.body.removeChild(tempInput);
+
+                mostrarNotificacion(`${etiqueta} copiado: ${texto}`);
+            } catch (err) {
+                mostrarNotificacion('No se pudo copiar automáticamente.');
+            }
+        }
+
+        function mostrarNotificacion(mensaje) {
+            const toast = document.getElementById('toast');
+            const toastMessage = document.getElementById('toast-message');
+            
+            toastMessage.textContent = mensaje;
+            toast.classList.remove('translate-y-20', 'opacity-0');
+            toast.classList.add('translate-y-0', 'opacity-100');
+
+            clearTimeout(toastTimeout);
+            toastTimeout = setTimeout(() => {
+                toast.classList.remove('translate-y-0', 'opacity-100');
+                toast.classList.add('translate-y-20', 'opacity-0');
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
